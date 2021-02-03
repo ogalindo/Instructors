@@ -1,0 +1,79 @@
+.instructor-card{
+    width: 230px;
+    height: 280px;
+    /*height: 464px;*/
+    border-radius: 8%;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 0;
+    margin-bottom: 16px;
+    margin-right: 16px;
+}
+
+.expand-instructor-card-view {
+    height: 464px;
+    margin-bottom: 40px;
+    border-radius: 6.5%;
+    
+}
+
+.picture {
+    height: 80px;
+    width: 80px;
+    margin: 20px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    padding: 25px;
+    color: white;
+}
+
+.info-btn {
+    margin-left: 4px ;
+    margin-right: 4px ;
+    font-size: 9px;
+    background-color: white;
+}
+
+.container-info-buttons {
+    margin-bottom: 40px;
+    padding: 0 10px;
+}
+
+.new-view-instructor{
+    width: 100%;
+    height: 200px;
+    border-bottom-right-radius: 8%;
+    border-bottom-left-radius: 8%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.subtitles-new-view-inst {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.subtitle-subject {
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.subtitle-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.title{
+    color: #37755E;
+}
+
+.container-title{
+    text-align: center;
+    font-weight: bold;
+}

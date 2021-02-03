@@ -1,0 +1,41 @@
+.logo{
+    font-weight: 600;
+    width: 210px;
+    height: 30px;
+    color: white;
+    list-style: none;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.header-container {
+    background: #58B092;
+    height: 56px;
+    margin-bottom: 30px;
+}
+
+.nav-item {
+    padding: 0;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 16px;
+    height: 100%;
+}
+
+.selected {
+    position: relative;
+  }
+  
+.selected:after {
+    background-color: white;
+    border-radius: 10px;
+    content: '';
+    position: absolute;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }

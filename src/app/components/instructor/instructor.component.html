@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row container-title">
+        <h2 class="col-xl-11 title">Instructors</h2>
+        <a class="nav-link col-xl-1" (click)="changeView()">
+            <svg *ngIf="!expandView" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-layout-split" viewBox="0 0 16 16" color="#37755E">
+                <path d="M0 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3zm8.5-1v12H14a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H8.5zm-1 0H2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h5.5V2z"/>
+            </svg>
+            <svg *ngIf="expandView" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16" color="#37755E">
+                <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+            </svg>
+        </a>
+    </div>
+    <div class="row justify-content-start">
+        <div *ngFor="let instructor of instructors" [ngClass]="{'expand-instructor-card-view': expandView}" class="instructor-card col-xl-3 justify-content-center col align-self-center" style=" background-color: {{instructor.principalColor}}">
+            <div class="picture col align-items-center" style=" background-color: {{instructor.secondColor}}">
+                <p>IMG</p>
+            </div>
+            <p class="subtitle-name">{{instructor.name}}</p>
+            <p class="subtitle-subject">{{instructor.subject}}</p>
+            <div class="container-info-buttons row align-items-center justify-content-center">
+                <button style="border-color: {{instructor.secondColor}}" type="button" class="col-xl-3 btn btn-outline-dark btn-sm info-btn" disabled>{{instructor.experience}} years</button>
+                <button style="border-color: {{instructor.secondColor}}" type="button" class="col-xl-3 btn btn-outline-dark btn-sm info-btn" disabled>{{instructor.personality}}</button>
+                <button style="border-color: {{instructor.secondColor}}" type="button" class="col-xl-3 btn btn-outline-dark btn-sm info-btn" disabled>{{instructor.other}}</button>
+            </div>
+            <div *ngIf="expandView" class="new-view-instructor" style=" background-color: {{instructor.secondColor}}">
+                <p class="subtitles-new-view-inst">Students</p>
+                <p class="subtitles-new-view-inst">Recent projects</p>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,53 @@
+
+.sidebar{    
+    max-width: 210px;
+}
+.new-instructor-button{
+    color: #58B092;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.main {
+    width: 50%;
+    height: 10px;
+    margin: 50px auto;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    height: 30px;
+    border-color: #58B092;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 1.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.see-more {
+    color: #58B092;
+    font-size: small;
+    padding-left: 0;
+}
+
+.form-check-input{
+    padding-left: 0.25rem !important;
+}
+
+.container-general {
+    overflow-y: scroll;
+    height: 550px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+

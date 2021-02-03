@@ -1,0 +1,19 @@
+.nav-item a {
+    text-decoration: none;
+    color: rgb(124, 112, 112);
+    font-size: medium;
+}
+
+.trademark {
+    font-weight: 600;
+    color:  #58B092;
+}
+
+.copyright {
+    font-size: 2px;
+    margin: auto;
+}
+
+.brand {
+    text-align: center;
+}
